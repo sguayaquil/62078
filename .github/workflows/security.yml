@@ -28,7 +28,6 @@ jobs:
           python-version: "3.10"
       - name: Install Python Dependencies
         run: |
-          bash python-env-setup.sh
           pip install -r ${{ matrix.requirements }}
 
       - name: Run Snyk to check for vulnerabilities
