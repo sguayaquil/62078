@@ -36,4 +36,4 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           #args: --package-manager=pip --file=${{ matrix.requirements }} --command=python3
-          args: -d
+          args: --all-projects -d
