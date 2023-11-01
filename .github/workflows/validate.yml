@@ -35,4 +35,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --package-manager=pip --file=${{ matrix.requirements }} -d
+          args: --package-manager=pip --file=${{ matrix.requirements }} --print-deps -d
