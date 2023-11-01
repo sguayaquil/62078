@@ -28,7 +28,7 @@ jobs:
           python-version: "3.8"
       - name: Install Python Dependencies
         run: |
-          pip install -r ${{ matrix.requirements }}
+          python3 -m pip install -r ${{ matrix.requirements }}
 
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.9@master
