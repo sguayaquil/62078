@@ -40,4 +40,4 @@ jobs:
           COMMAND: pip install -r ${{ matrix.requirements }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --package-manager=pip --file=${{ matrix.requirements }} --print-deps -d
+          args: --package-manager=pip --file=${{ matrix.requirements }} --command=python3 -d
