@@ -35,7 +35,7 @@ jobs:
           python --version
 
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/python@master
+        uses: snyk/actions/python-3.8@master
         env:
           COMMAND: pip install -r ${{ matrix.requirements }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
